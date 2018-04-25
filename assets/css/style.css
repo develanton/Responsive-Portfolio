@@ -235,23 +235,37 @@ input{
     p{
         width: auto;
     }
+    #homes{
+        width: 100%;
+        padding-left: 0px;
+        margin: 0px;
+        left: 0px;
+       }
+
+       .miss1{
+        position: absolute;
+        top: 100px;
+        background-color: #fff;
+        height:50px;
+    }
 
 }
 
 @media screen and (max-width:768px){
 
     .miss1{
-        position: relative;
+        position: absolute;
+        top: 100px;
+        background-color: #fff;
+        height:50px;
     }
     #homes{
          width: 100%;
          padding-left: 0px;
+         margin: 0px;
+         left: 0px;
+        }
 
-          
-    }
-    header{
-
-    }
 
 }
 
