@@ -124,6 +124,8 @@ p{
     margin-top: 30px;
     padding-right: 30px;
     padding-bottom: 20px;
+    width: 250px; 
+    height: 250;
 }
 footer{
     color: #777777;
@@ -232,22 +234,49 @@ input{
 }
 
 @media screen and (max-width:980px){
-    p{
+        p{
         width: auto;
-    }
-    #homes{
+        font-size: large;
+        padding:10px; 
+        margin-right: 70px;   
+
+        }
+        #homes{
         width: 100%;
         padding-left: 0px;
         margin: 0px;
         left: 0px;
-       }
+        }
 
        .miss1{
         position: absolute;
         top: 100px;
+        left: 0px;
+        right: 0px;
         background-color: #fff;
-        height:50px;
-    }
+        height:40px;
+        padding-top: 20px;
+        padding-bottom: 0px;
+        widows: 100%;
+        text-align: center;
+        }
+        #killa{
+            top:150px;
+            left: 0px;
+        }
+        #selec{
+            
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        h2{
+            width: 100%;
+            margin-left: 0px;
+            text-align: center;
+            padding-left: 0px;
+        }
+
+
 
 }
 
@@ -269,6 +298,23 @@ input{
 
 }
 
-@media screen and (max-width:6400px){
+@media screen and (max-width:640px){
+
+    #foto{
+        position: relative;
+        float: none;
+        width:70%;
+        margin-left:15%;
+        /*margin-left: 20%;*/
+
+    }
+
+    h2{
+        border-bottom: #ddd;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        
+    }
+
 
 }
