@@ -4,14 +4,18 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 header{
-    margin: 0px;
-    padding-left: 10%;
+    width: 100%;
+    margin-top: -10px;
+    
+    height: 100px;
     border-bottom-style: solid;
     border-bottom-color: #ddd;
     background-color: #fff; 
+    float: left;
 }
 h1{
-   width: 30%;
+   clear: both; 
+   width: 300px;
    height: 40px;
    left: 95;
    top: -80px;
@@ -32,20 +36,21 @@ section{
 .miss1{
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
+    display: inline;
+    
 }
 #menu1{
-    position: absolute; top: 55px;right: 60%;bottom: 20px; left: 53%;
+    /*position: absolute; top: 55px;right: 60%;bottom: 20px; left: 53%;*/
     color: #777777;
-   
     text-align: center;
     text-decoration: none;
     width: 5%;
     height:20px;
 }
 #menu2{
-    position: absolute; top: 55px;right: 60%;bottom: 20px; left: 59%;
+    /*position: absolute; top: 55px;right: 60%;bottom: 20px; left: 59%;*/
     color: #777777;
-    width: 5%;
+    width: 70px;
     height:20px;
     text-decoration: none;
     border-color: #ddd;
@@ -56,10 +61,13 @@ section{
     padding-right: 5px;   
 }
 #menu3{
+    display: inline;
     color: #777777;
-    position: absolute; top: 55px;right: 60%;bottom: 20px; left: 66%;
-    padding-left: 15px;
+   /* position: absolute; top: 55px;right: 60%;bottom: 20px; left: 66%; */
+    position: relative;
+    padding-left: 18px;
     text-decoration: none;
+
 }
 h2{
     width: 910px;
@@ -96,7 +104,7 @@ p{
     font-size: larger;    
 }
 #killa{  
-    background-color: #ffffff;
+    
     z-index: 1;
 }
 #selec{
@@ -215,4 +223,29 @@ footer{
 
 input{
     
+}
+
+@media screen and (max-width:980px){
+
+}
+
+@media screen and (max-width:768px){
+
+    .miss1{
+        position: relative;
+    }
+    #homes{
+         width: 100%;
+         padding-left: 0px;
+
+          
+    }
+    header{
+
+    }
+
+}
+
+@media screen and (max-width:6400px){
+
 }
