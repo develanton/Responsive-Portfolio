@@ -32,6 +32,7 @@ h1{
 }
 section{
     position: absolute;
+    top: 100px;
     background-image: url("/Users/Antonio/Basic-Portfolio/assets/images/dust_scratches.png");   
 }
 .miss1{
@@ -147,7 +148,7 @@ footer{
     width: 870px;
 }
 
-.line1{
+#line1{
     clear: both;
     margin:0px;
     padding: 0px;
@@ -157,7 +158,8 @@ footer{
     background-color: #ddd;
     margin-left: 192px;
     border:0px;
-    z-index: 2;
+    z-index: 5;
+    text-outline: 180px;
     position: absolute;
     
 }
@@ -229,6 +231,10 @@ footer{
 
 }
 
+#line1{
+    top:160px;
+}
+
 
 @media screen and (max-width:980px){
         p{
@@ -254,7 +260,7 @@ footer{
         height:40px;
         padding-top: 20px;
         padding-bottom: 0px;
-        widows: 100%;
+        width: 100%;
         text-align: center;
         }
         #killa{
@@ -275,11 +281,13 @@ footer{
         .grid-container {
             display: grid;
             grid-gap: 10px 10px;
-            grid-template-columns: auto auto;
+            grid-template-columns:auto auto auto;
             background-color: #fff;
             padding-top: 40px;
             padding-left: 40px;
+            padding-right: 40px;
             width: 100%;
+            margin-left:0px;
 
         }
         .grid-item {
@@ -293,11 +301,13 @@ footer{
             margin-left: 50px;
             
         } 
-        .porto{
+        #porto{
+            
             width: 100%;
             margin-left: 0px;
-            padding-left: 0px;
-            text-align: auto;
+            padding-left: 40px; 
+            padding-right: 40px; 
+            text-align: center;
         }
 
         #form{
@@ -307,6 +317,16 @@ footer{
             margin-left: 0px;
             font-family: Arial, Helvetica, sans-serif;
             color: #777777;
+        }
+
+      
+        #line1{
+            top: 160px;
+            width: 100%;
+            margin-left: 0px;
+            background-color: #ddd;
+        }    
+
 }
 
 @media screen and (max-width:768px){
@@ -324,23 +344,26 @@ footer{
          left: 0px;
         }
 
-        #porto{
-            width:332px; 
+     #porto{
+            
+            width: 100%;
+            margin-left: 0px;
+            padding-left: 40px;
+            padding-right: 40px;  
             text-align: center;
-            margin-left: 30%;
-        }    
+        }
     
-        .grid-container {
+    .grid-container {
             display: grid;
             grid-gap: 10px 10px;
-            grid-template-columns:auto;
+            grid-template-columns:auto auto;
             background-color: #fff;
             padding-top: 40px;
             padding-left: 40px;
             width: 100%;
-            margin-left:30%;
+            margin-left:0px;
         }
-        .grid-item {
+    .grid-item {
             background-color: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(0, 0, 0, 0.8);
             margin-bottom:20px;
@@ -351,6 +374,22 @@ footer{
             margin-left: 50px;
         }
 
+    h2{
+        border-bottom: #ddd;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        width:100%; 
+        text-align: center;
+        
+    }
+
+    #line1{
+            display: none;
+            background-color: #ddd;
+        }  
+    section{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:640px){
@@ -372,13 +411,38 @@ footer{
         text-align: center;
         
     }
-
     #porto{
-        width:382px; 
+            
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 40px;  
         text-align: center;
+    }
 
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px 10px;
+        grid-template-columns: auto;
+        background-color: #fff;
+        padding-top: 40px;
+        padding-left: 40px;
+        width: 100%;
+        margin-left:0%;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        margin-bottom:20px;
+        font-size: 30px;
+        text-align: center;
+        width: 200px;
+        height: 220px;
+        margin-left: 50px;
+    }
+
+    #line1{
+        display: none;
+        background-color: #ddd;
     }    
-
-
-
 }
